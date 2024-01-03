@@ -17,9 +17,9 @@
 <td><%=coin.description %></td>
 <td><%=coin.acronym %></td>
 <td><%=image_tag coin.url_image,size:"25x25" %></td>
-<td><%= link_to t('links.show'),coin%></td>
-<td><%= link_to t('links.edit'),edit_coin_path(coin)%></td>
-<td><%= link_to t('links.delete'),coin,method: :delete,data:{confirm:t('messages.confirm')}%></td>
+<td><%= link_to t('links.mostrar'),coin%></td>
+<td><%= link_to t('links.editar'),edit_coin_path(coin)%></td>
+<td><%= link_to t('links.apagar'),coin,method: :delete,data:{confirm:t('messages.Tem certeza?')}%></td>
 </tr>
 <%end%>
 </tbody>
